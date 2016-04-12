@@ -1,4 +1,4 @@
-Simple portfolio based on ['https://github.com/AngularClass/NG6-starter'](AngularClass/NG6-starter)
+Simple portfolio based on [`AngularClass/NG6-starter`](https://github.com/AngularClass/NG6-starter)
 
 ### Usage
 - Clone or fork this repository
