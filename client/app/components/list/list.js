@@ -10,7 +10,6 @@ let listModule = angular.module('list', [
   "ngInject";
 
   $urlRouterProvider.otherwise('/');
-
   $stateProvider
     .state('list', {
       url: '/list',
