@@ -1,9 +1,8 @@
-import project from './../../common/project/project'
-
 class ListController {
-  constructor() {
+  constructor(project) {
+	"ngInject";
     this.name = 'list';
-    console.log(project);
+    this.list = project.getList();
   }
 }
 

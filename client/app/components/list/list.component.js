@@ -7,7 +7,7 @@ let listComponent = {
   bindings: {},
   template,
   controller,
-  controllerAs: 'vm'
+  controllerAs: 'vm',
 };
 
 export default listComponent;
