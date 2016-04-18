@@ -1,9 +1,20 @@
-<div class="container" ng-init="vm.getList()">
-	<div class="col-md-12">
-		<h1>List template</h1>
-		<div class="row">
-			<div class="col-md-4" ng-repeat="project in vm.list">
-				{{project.name}}
+<navbar></navbar>
+
+<div class="content">
+	<div class="container">
+		<div class="col-md-12">
+			<div class="row list">
+				<div class="col-md-4 list__item" ng-repeat="project in vm.list">
+					<div class="list__item__photo">
+						<img ng-src="{{project.image}}" alt="">
+					</div>
+					<div class="list__item__title">
+						{{project.name}}
+					</div>
+					<div class="list__item__descr">
+						{{project.short_description}}
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
