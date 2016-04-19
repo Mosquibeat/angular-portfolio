@@ -4,15 +4,13 @@
 	<div class="container">
 		<div class="col-md-12">
 			<div class="row list">
-				<div class="col-md-4 list__item" ng-repeat="project in vm.list">
-					<div class="list__item__photo">
-						<img ng-src="{{project.image}}" alt="">
-					</div>
-					<div class="list__item__title">
-						{{project.name}}
-					</div>
-					<div class="list__item__descr">
-						{{project.short_description}}
+				<div class="col-md-4" ng-repeat="project in vm.list">
+					<div class="list__item card">
+						<img class="card-img-top list__item__photo" ng-src="{{project.image}}" alt="">
+						<div class="list__item__content">
+							<h4 class="card-title list__item__title">{{project.title}}</h4>
+							<p class="card-text list__item__descr">{{project.short_description}}</p>
+						</div>
 					</div>
 				</div>
 			</div>
