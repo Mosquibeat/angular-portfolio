@@ -36,6 +36,10 @@ navbar {
 					color : $darkActive;
 				}
 			}
+
+			.navbar-toggler {
+				color : $darkActive;
+			}
 		}
 
 
@@ -51,6 +55,10 @@ navbar {
 				text-decoration: none;
 				color : $whiteActive;
 			}
+		}
+
+		.navbar-toggler {
+			color : $whiteActive;
 		}
 	}
 }

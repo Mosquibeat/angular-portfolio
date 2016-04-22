@@ -5,8 +5,8 @@
 		<div class="col-md-12">
 			<div class="row list">
 				<div class="col-md-4" ng-repeat="project in vm.list">
-					<div class="list__item card">
-						<img class="card-img-top list__item__photo" ng-src="{{project.image}}" alt="">
+					<div class="list__item card" ui-sref="detail({projectUrl : project.url})">
+						<img class="card-img-top list__item__photo" ng-src="{{project.thumbnail}}" alt="">
 						<div class="list__item__content">
 							<h4 class="card-title list__item__title">{{project.title}}</h4>
 							<p class="card-text list__item__descr">{{project.short_description}}</p>

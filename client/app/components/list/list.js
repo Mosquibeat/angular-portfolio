@@ -8,13 +8,19 @@ let listModule = angular.module('list', [
 
 .config(($stateProvider, $urlRouterProvider) => {
   "ngInject";
-
+  $urlRouterProvider.when("/project", "/project/list");
   $urlRouterProvider.otherwise('/');
   $stateProvider
-    .state('list', {
-      url: '/list',
-      template: '<list></list>'
-    });
+  	.state('project', {
+        abstract: true,
+        url: '/project',
+        template: '<ui-view/>'
+    })
+
+    .state('project.list', {
+        url: '/list',
+      	template: '<list></list>'
+    })
 })
 
 .component('list', listComponent);
