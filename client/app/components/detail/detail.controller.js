@@ -12,13 +12,19 @@ class DetailController {
 		var img = new Image();
 		img.src = this.project.thumbnail;
 		img.onload = function () {
-		small.classList.add('loaded');
+			var ratio = (this.height / this.width);
+			var divWidth = placeholder.offsetWidth;
+			placeholder.style.height = ((placeholder.offsetWidth * ratio) + "px");
+			small.classList.add('loaded');
 		};
+
 		var imgLarge = new Image();
+
 		imgLarge.src = this.project.image; 
 		imgLarge.onload = function () {
-		imgLarge.classList.add('loaded');
+			imgLarge.classList.add('loaded');
 		};
+
 		placeholder.appendChild(imgLarge);
    	}
 
