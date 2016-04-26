@@ -3,8 +3,8 @@
 <div class="figure" style="background-image: url('http://assets.mcast.fr/test/figure.jpg');">
 	<div class="figure__container">
 		<div class="who">
-			<p class="name">Antoine De Cacqueray</p>
-			<p class="function">Game Designer</p>
+			<p class="name">{{vm.text.name}}</p>
+			<p class="function">{{vm.text.function}}</p>
 		</div>
 	</div>
 </div>
@@ -12,13 +12,7 @@
 	<div class="row">
 		<div class="row">
 			<div class="col-md-12 presentation">
-				<h1 class="title">Bienvenue</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla odit, voluptate sit molestiae tempore ratione esse vel dolorum adipisci, assumenda veritatis eius eveniet alias quas id porro quidem, ullam dolor.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ratione laudantium mollitia doloremque, perspiciatis architecto, facilis, nisi libero tempore assumenda minus. Voluptates animi ducimus sunt, quibusdam accusamus unde recusandae? Rerum?
-				</p>
+				<md data="{{vm.text.presentation[$root.language]}}"></md>
 			</div>
 		</div>
 	</div>

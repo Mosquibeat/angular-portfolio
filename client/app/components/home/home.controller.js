@@ -1,7 +1,8 @@
 class HomeController {
-  constructor($state) {
+  constructor(text, $rootScope) {
   	"ngInject";
     this.name = 'home';
+    this.text = text.getMain();
   }
 }
 

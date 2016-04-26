@@ -1,5 +1,9 @@
 @import 'vendor/bootstrap/bootstrap';
 
+$pswp__assets-path: '../../../../node_modules/photoswipe/src/css/default-skin/';
+@import "../../../../node_modules/photoswipe/src/css/main";
+@import "../../../../node_modules/photoswipe/src/css/default-skin/default-skin";
+
 @import 'modules/_typography';
 @import 'modules/_app';
 

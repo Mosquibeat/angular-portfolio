@@ -12,15 +12,13 @@
 
 			padding: 15px;
 			
-			&__title {
-				margin-top: 10px;
-				font-size: 1.2rem;
-				font-weight: 500;
-			}
+		}
+		&__title {
+			font-weight: 500;
+		}
 
-			&__descr {
-				font-size: 0.9rem;
-			}
+		&__descr {
+			color: #6F6F6F;
 		}
 
 		&:hover {

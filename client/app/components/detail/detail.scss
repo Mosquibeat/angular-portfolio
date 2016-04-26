@@ -1,4 +1,8 @@
 .detail {
+	h1 {
+		margin-bottom: 2rem;
+	}
+
 	&__img {
 		width: 100%;
 		margin-bottom: 3rem;
@@ -7,6 +11,12 @@
 		img {
 			max-width: 100%;
 		}
+	}
+
+	p {
+		font-size: 1.2rem;
+		margin-bottom: 1.4rem;
+		color: #55595C;
 	}
 }
 
@@ -23,10 +33,9 @@
 .progressive-image img {
 	position: absolute;
 	opacity: 0;
-	top: -40%;
+	top: 0;
 	left: 0;
 	width: 100%;
-	transition: opacity .5s linear;
 }
 
 .progressive-image img.loaded {

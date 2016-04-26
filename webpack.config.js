@@ -7,10 +7,17 @@ module.exports = {
   entry: {},
   module: {
     loaders: [
-       { test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'ng-annotate!babel' },
+       { test: /\.js$/, exclude: [/app\/lib/], loader: 'ng-annotate!babel' },
        { test: /\.html$/, loader: 'raw' },
        { test: /\.css$/, loader: 'style!css' },
        { test: /\.(sass|scss)$/, loader: 'style!css!sass' },
+       {
+          test: /\.(jpe?g|png|gif|svg)$/i,
+          loaders: [
+              'file?hash=sha512&digest=hex&name=[hash].[ext]',
+              'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+          ]
+      }
     ]
   },
   plugins: [

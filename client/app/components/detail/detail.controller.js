@@ -3,11 +3,13 @@ class DetailController {
   	"ngInject";
     this.name = 'detail';
     this.project = project.getItemByUrl($stateParams.projectUrl);
+		this.progressiveLoad();
+  }
 
-    // Defining progressive load
-   	this.progressiveLoad = function() {
-   		var placeholder = document.querySelector('.progressive-image'),
-	  	small = placeholder.querySelector('.img-small')
+	// Defining progressive load
+	progressiveLoad() {
+		var placeholder = document.querySelector('.progressive-image'),
+		small = placeholder.querySelector('.img-small')
 
 		var img = new Image();
 		img.src = this.project.thumbnail;
@@ -26,11 +28,7 @@ class DetailController {
 		};
 
 		placeholder.appendChild(imgLarge);
-   	}
-
-   	// Triggering progressive load image
-   	this.progressiveLoad();
-  }
+	}
 }
 
 export default DetailController;
