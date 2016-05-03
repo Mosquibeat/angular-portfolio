@@ -28,6 +28,43 @@
   overflow: hidden;
   max-height: 60vh;
   text-align: center;
+  cursor: pointer;
+
+  .more {
+		&:before {
+	    content: ' ';
+	    display: inline-block;
+	    vertical-align: middle;
+	    height: 100%;
+		}
+
+		background: rgba(0, 0, 0, 0.5);
+		position: absolute;
+		opacity: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 10;
+	 
+	  &__span {
+	   	vertical-align: middle;
+		  display: inline-block;
+		  border: 3px solid #FFF;
+		  color: #FFF;
+		  padding: 15px 30px;
+		  font-size: 1.2rem;
+
+		  &:hover {
+		  	color: #55595C;
+		  	background: #FFF;
+		  }
+  	}
+  }
+
+  &:hover {
+  	.more {
+			opacity: 1;
+  	}
+  }
 }
 
 .progressive-image img {
@@ -48,4 +85,11 @@
 	-o-filter: blur(5px);
 	-ms-filter: blur(5px);
 	filter: blur(5px);
+}
+
+#swipebox-slider {
+	* {
+		transition: none;
+		-webkit-transition: none;
+	}
 }

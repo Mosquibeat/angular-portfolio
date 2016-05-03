@@ -1,6 +1,7 @@
 import template from './detail.html';
 import controller from './detail.controller';
-require('./detail.scss');
+import '../../../../node_modules/swipebox/src/css/swipebox.css';
+import './detail.scss';
 
 let detailComponent = {
   restrict: 'E',

@@ -1,7 +1,7 @@
 class AppController {
   constructor($rootScope) {
   	"ngInject";
-  	$rootScope.language = "FR";
+  	$rootScope.lang = "FR";
     this.name = 'app';
   }
 }

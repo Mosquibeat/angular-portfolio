@@ -1,9 +1,14 @@
+import $ from "jquery";
+import swipebox from '../../../../node_modules/swipebox/src/js/jquery.swipebox';
+
+
 class DetailController {
   constructor(project, $stateParams) {
   	"ngInject";
     this.name = 'detail';
     this.project = project.getItemByUrl($stateParams.projectUrl);
 		this.progressiveLoad();
+		this.lightbox(this.project.gallery);
   }
 
 	// Defining progressive load
@@ -22,12 +27,25 @@ class DetailController {
 
 		var imgLarge = new Image();
 
-		imgLarge.src = this.project.image; 
+		imgLarge.src = this.project.gallery[0].href; 
 		imgLarge.onload = function () {
 			imgLarge.classList.add('loaded');
 		};
 
 		placeholder.appendChild(imgLarge);
+	}
+
+	// Lightbox generator
+	lightbox(gallery) {
+		$( '#gallery' ).click( function( e ) {
+			e.preventDefault();
+			$.swipebox(
+				gallery,
+				{
+					useSVG : false
+				}
+			);
+		});
 	}
 }
 

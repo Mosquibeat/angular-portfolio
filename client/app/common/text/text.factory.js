@@ -4,7 +4,10 @@ let TextFactory = function () {
 	var main = {
 		"name" : "Antoine De Cacqueray",
 		"function" : "Game Designer",
-		"presentation" : {"FR" : "## Bienvenue", "EN" : "## Welcome"}
+		"presentation" : {
+			"FR" : "## Bienvenue",
+	 		"EN" : "## Welcome"
+		}
 	}
 
 	factory.getMain = () => {

@@ -10,7 +10,7 @@ export default class ExampleDirective {
   // Directive link function
   link(scope, element, attributes) {
     attributes.$observe('data', function(value){
-        element.replaceWith(markdown.markdown.toHTML(value));
+      element.replaceWith(markdown.markdown.toHTML(value));
     });
   }
 }
