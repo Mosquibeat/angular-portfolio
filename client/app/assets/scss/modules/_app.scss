@@ -21,3 +21,51 @@ h1 {
 .content {
 	padding-top: 136px;
 }
+
+.more_helper {
+
+}
+
+.vertical-center {
+	&:before {
+		content: ' ';
+	    display: inline-block;
+	    vertical-align: middle; /* vertical alignment of the inline element */
+	    height: 100%;
+	}
+
+	span {
+   	vertical-align: middle;
+	  display: inline-block;
+	}
+}
+
+
+.more-container {
+	.more {
+		background: rgba(0, 0, 0, 0.5);
+		position: absolute;
+		opacity: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 10;
+	 
+	  &__span {
+		  border: 3px solid #FFF;
+		  color: #FFF;
+		  padding: 15px 30px;
+		  font-size: 1.2rem;
+
+		  &:hover {
+		  	color: #55595C;
+		  	background: #FFF;
+		  }
+		}
+	}
+
+	&:hover {
+		.more {
+			opacity: 1;
+		}
+	}
+}

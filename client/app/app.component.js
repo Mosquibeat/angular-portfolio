@@ -5,7 +5,8 @@ let appComponent = {
   template,
   controller,
   controllerAs: 'app',
-  restrict: 'E'
+  restrict: 'E',
+ 	lang : 'FR'
 };
 
 export default appComponent;

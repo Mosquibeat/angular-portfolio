@@ -3,8 +3,8 @@
 <div class="figure" style="background-image: url('http://assets.mcast.fr/test/figure.jpg');">
 	<div class="figure__container">
 		<div class="who">
-			<p class="name">{{vm.text.name}}</p>
-			<p class="function">{{vm.text.function}}</p>
+			<p class="name">{{vm.user.name}}</p>
+			<p class="function">{{vm.user.function}}</p>
 		</div>
 	</div>
 </div>
@@ -12,7 +12,7 @@
 	<div class="row">
 		<div class="row">
 			<div class="col-md-12 presentation">
-				<md data="{{vm.text.presentation[$root.lang]}}"></md>
+				<md data="{{vm.presentation}}"></md>
 			</div>
 		</div>
 	</div>
