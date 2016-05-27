@@ -1,7 +1,7 @@
 import markdown from 'markdown';
 
 
-export default class ExampleDirective {
+export default class mdDirective {
   constructor() {
     this.restrict = 'E';
     this.scope = {};

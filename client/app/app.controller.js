@@ -1,5 +1,5 @@
 class AppController {
-  constructor($rootScope) {
+  constructor() {
   	"ngInject";
 
     this.name = 'app';

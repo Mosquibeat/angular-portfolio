@@ -3,12 +3,13 @@ class HomeController {
   constructor(text, user) {
   	"ngInject";
     this.name = 'home';
-    this.text = text.getMain();
     this.lang = appComponent.lang;
-    
+    this.presentation = false;
+
   	user.getUser().then(
   		result => {
   			this.user = result;
+  			this.presentation = String(result.language[1].description);
   		}
   	);
   }
