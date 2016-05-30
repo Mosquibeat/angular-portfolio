@@ -9,14 +9,23 @@ body {
 }
 
 h1 {
-	
-	&.title {
-		margin: 2.0rem 0;
+
+	& {
+		margin-bottom: 2.0rem;
 	}
-	
+
 	font-weight: 300;
-	font-size: 3rem;
+	font-size: 4rem;
 }
+
+.text {
+	p {
+		font-size: 1.2rem;
+		margin-bottom: 1.4rem;
+		color: #55595C;
+	}
+}
+
 
 .content {
 	padding-top: 136px;
@@ -49,7 +58,7 @@ h1 {
 		height: 100%;
 		width: 100%;
 		z-index: 10;
-	 
+
 	  &__span {
 		  border: 3px solid #FFF;
 		  color: #FFF;

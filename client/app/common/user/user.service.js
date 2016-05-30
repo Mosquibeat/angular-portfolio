@@ -12,6 +12,14 @@ export default class UserService {
         return response.data.user;
     });
   }
+
+  getPresentation(lang) {
+    return this.$http
+      .get(config.assetsUrl + '/' + lang + '.md')
+      .then((response) => {
+        return response.data;
+    });
+  }
 }
 
 

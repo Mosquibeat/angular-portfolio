@@ -1,6 +1,6 @@
 <navbar class="home"></navbar>
 
-<div class="figure" style="background-image: url('http://assets.mcast.fr/test/figure.jpg');">
+<div class="figure" ng-style="{'background-image':'url(' + vm.config.assetsUrl + '/figure.jpg)'}">
 	<div class="figure__container">
 		<div class="who">
 			<p class="name">{{vm.user.name}}</p>
@@ -9,11 +9,9 @@
 	</div>
 </div>
 <div class="container">
-	<div class="row">
-		<div class="row">
-			<div class="col-md-12 presentation" ng-if="vm.presentation">
-				<md data="{{vm.presentation}}"></md>
-			</div>
+	<div class="row text">
+		<div class="col-md-12 presentation" ng-if="vm.presentation">
+			<md data="{{vm.presentation}}"></md>
 		</div>
 	</div>
 </div>
